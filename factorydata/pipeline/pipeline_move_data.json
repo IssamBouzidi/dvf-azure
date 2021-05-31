@@ -209,7 +209,8 @@
 									"path": "$['Nature culture']"
 								},
 								"sink": {
-									"name": "Nature culture"
+									"name": "Nature culture",
+									"type": "String"
 								}
 							},
 							{
