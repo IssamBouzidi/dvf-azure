@@ -218,7 +218,8 @@
 									"path": "$['Surface terrain']"
 								},
 								"sink": {
-									"name": "Surface terrain"
+									"name": "Surface terrain",
+									"type": "String"
 								}
 							}
 						],
