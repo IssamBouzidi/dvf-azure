@@ -24,8 +24,7 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings",
-							"maxConcurrentConnections": 4
+							"type": "AzureBlobFSWriteSettings"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
@@ -39,18 +38,10 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['_id']['$oid']"
-								},
-								"sink": {
-									"ordinal": 1
-								}
-							},
-							{
-								"source": {
 									"path": "$['No disposition']"
 								},
 								"sink": {
-									"ordinal": 2
+									"name": "No disposition"
 								}
 							},
 							{
@@ -58,7 +49,7 @@
 									"path": "$['Date mutation']"
 								},
 								"sink": {
-									"ordinal": 3
+									"name": "Date mutation"
 								}
 							},
 							{
@@ -66,7 +57,7 @@
 									"path": "$['Nature mutation']"
 								},
 								"sink": {
-									"ordinal": 4
+									"name": "Nature mutation"
 								}
 							},
 							{
@@ -74,7 +65,7 @@
 									"path": "$['Valeur fonciere']"
 								},
 								"sink": {
-									"ordinal": 5
+									"name": "Valeur fonciere"
 								}
 							},
 							{
@@ -82,7 +73,7 @@
 									"path": "$['No voie']"
 								},
 								"sink": {
-									"ordinal": 6
+									"name": "No voie"
 								}
 							},
 							{
@@ -90,7 +81,7 @@
 									"path": "$['Type de voie']"
 								},
 								"sink": {
-									"ordinal": 7
+									"name": "Type de voie"
 								}
 							},
 							{
@@ -98,7 +89,7 @@
 									"path": "$['Code voie']"
 								},
 								"sink": {
-									"ordinal": 8
+									"name": "Code voie"
 								}
 							},
 							{
@@ -106,7 +97,7 @@
 									"path": "$['Voie']"
 								},
 								"sink": {
-									"ordinal": 9
+									"name": "Voie"
 								}
 							},
 							{
@@ -114,7 +105,7 @@
 									"path": "$['Code postal']"
 								},
 								"sink": {
-									"ordinal": 10
+									"name": "Code postal"
 								}
 							},
 							{
@@ -122,7 +113,7 @@
 									"path": "$['Commune']"
 								},
 								"sink": {
-									"ordinal": 11
+									"name": "Commune"
 								}
 							},
 							{
@@ -130,7 +121,7 @@
 									"path": "$['Code departement']"
 								},
 								"sink": {
-									"ordinal": 12
+									"name": "Code departement"
 								}
 							},
 							{
@@ -138,7 +129,7 @@
 									"path": "$['Code commune']"
 								},
 								"sink": {
-									"ordinal": 13
+									"name": "Code commune"
 								}
 							},
 							{
@@ -146,7 +137,7 @@
 									"path": "$['Section']"
 								},
 								"sink": {
-									"ordinal": 14
+									"name": "Section"
 								}
 							},
 							{
@@ -154,7 +145,7 @@
 									"path": "$['No plan']"
 								},
 								"sink": {
-									"ordinal": 15
+									"name": "No plan"
 								}
 							},
 							{
@@ -162,7 +153,7 @@
 									"path": "$['1er lot']"
 								},
 								"sink": {
-									"ordinal": 16
+									"name": "1er lot"
 								}
 							},
 							{
@@ -170,7 +161,7 @@
 									"path": "$['Surface Carrez du 1er lot']"
 								},
 								"sink": {
-									"ordinal": 17
+									"name": "Surface Carrez du 1er lot"
 								}
 							},
 							{
@@ -178,7 +169,7 @@
 									"path": "$['Nombre de lots']"
 								},
 								"sink": {
-									"ordinal": 18
+									"name": "Nombre de lots"
 								}
 							},
 							{
@@ -186,7 +177,7 @@
 									"path": "$['Code type local']"
 								},
 								"sink": {
-									"ordinal": 19
+									"name": "Code type local"
 								}
 							},
 							{
@@ -194,7 +185,7 @@
 									"path": "$['Type local']"
 								},
 								"sink": {
-									"ordinal": 20
+									"name": "Type local"
 								}
 							},
 							{
@@ -202,7 +193,7 @@
 									"path": "$['Surface reelle bati']"
 								},
 								"sink": {
-									"ordinal": 21
+									"name": "Surface reelle bati"
 								}
 							},
 							{
@@ -210,7 +201,7 @@
 									"path": "$['Nombre pieces principales']"
 								},
 								"sink": {
-									"ordinal": 22
+									"name": "Nombre pieces principales"
 								}
 							},
 							{
@@ -218,7 +209,7 @@
 									"path": "$['Nature culture']"
 								},
 								"sink": {
-									"ordinal": 23
+									"name": "Nature culture"
 								}
 							},
 							{
@@ -226,7 +217,7 @@
 									"path": "$['Surface terrain']"
 								},
 								"sink": {
-									"ordinal": 24
+									"name": "Surface terrain"
 								}
 							}
 						],
